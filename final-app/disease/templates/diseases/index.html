@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+
+    Ocular Disease
+
+{% endblock title %}
+
+{% block content %}
+<h6>TEST PIPELINE</h6>
+<div class="h-100 d-flex align-items-center justify-content-center">
+        <form action="" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+            {% for field in form %}
+                <div class="fieldWrapper">
+                    {{ field.errors }}
+                    {{ field.label_tag }} {{ field }}
+                </div>
+            {% endfor %}
+            <button style="margin-top: 20px;" type="submit" class="btn btn-danger">Upload</button>
+        </form>
+
+  </div>
+
+
+
+{% endblock content %}

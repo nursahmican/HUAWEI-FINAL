@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}
+
+    Ocular Disease Result
+{% endblock %}
+
+{% block content %}
+
+
+<center><h1 style="color: white !important;">{{result.predicted_label}}</h1>
+    <img src="/media/{{result.image.image}}" width="350" height="250" alt="" >
+{% if result.normal != "None" %}
+<p>Normal: {{result.normal}}</p>
+{% endif %}
+
+{% if result.other_abnormalities != "None" %}
+<p>Other Abnormalities: {{result.other_abnormalities}}</p>
+{% endif %}
+
+{% if result.hypertension != None %}
+<p>Hypertension: {{result.hypertension}}</p>
+{% endif %}
+
+{% if result.pathological_myopia != None %}
+<p>Pathological Myopia: {{result.pathological_myopia}}</p>
+{% endif %}
+
+{% if result.glaucoma != None %}
+<p>Glaucoma: {{result.glaucoma}}</p>
+{% endif %}
+
+{% if result.diabetes != None %}
+<p>Diabetes: {{result.diabetes}}</p>
+{% endif %}
+
+{% if result.cataract != None %}
+<p>Cataract: {{result.cataract}}</p>
+{% endif %}
+
+{% if result.age_related_macular_degeneration != None %}
+<p>Age Related Macular Degeneration: {{result.age_related_macular_degeneration}}</p>
+{% endif %}
+
+</center>
+
+{% endblock %}
+
+ 

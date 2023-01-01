@@ -1,0 +1,30 @@
+<header id="header">
+    <nav id="nursah" class="navbar navbar-expand-lg p-3 mb-3 bg-body rounded ">
+
+      <div class="container-fluid ">
+        <a style="color: #ffffff;" id="navbar-logo" class="navbar-brand" href="{% url 'home' %}">
+          <img id="logo-img" src="img/logo.png" srcset="img/logo.png, img/logo.png, img/logo.png 900w" alt=""
+            class="d-inline-block align-text-bottom">
+          EDAI
+        </a>
+        <button class="navbar-toggler navbar-dark" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon">
+
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a style="color: #332828;" id="navbar-a-link" class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+            </li>
+            <li class="nav-item">
+              <a style="color: #332828;" id="navbar-a-link" class="nav-link active" aria-current="page" href="{% url 'results' %}">Results</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>

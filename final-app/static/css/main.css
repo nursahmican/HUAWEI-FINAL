@@ -1,0 +1,14 @@
+html,
+body {
+  height: 90%
+}
+
+body {
+    background: rgb(251,106,63) !important;
+background: radial-gradient(circle, rgba(251,106,63,1) 0%, rgba(255,58,98,1) 96%) !important;
+}
+#nursah {
+    background: rgb(251,106,63) !important;
+background: radial-gradient(circle, rgba(251,106,63,1) 0%, rgba(255,58,98,1) 96%) !important;
+   
+}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="d-flex align-items-center justify-content-center">
+
+    <div>
+          {% for result in results %}
+        <a style="color: white; font-size: 20px; text-decoration-line: none;" href="{% url 'result' result.id %}" class="list-group list-group-item-action px-3 border-0">{{result.predicted_label}}</a>
+        {% endfor %}
+      </div
+
+</div>
+
+{% endblock content %}
